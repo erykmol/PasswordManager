@@ -5,8 +5,13 @@
 </head>
 <body>
 	<a href="{% url 'Manager:create' %}"><button type="button">Create</button></a>
-	{% for site in sites %}
 	<table>
+	<tr>
+    <th>Site</th>
+    <th>Url</th> 
+    <th>Your login</th>
+  	</tr>
+	{% for site in sites %}
 	<tr>
 	<td>{{site.site_name}}</td>
 	<td>{{site.site_url}}</td>
@@ -14,8 +19,9 @@
 	<td>{{site.site_password}}</td>
 	<td><a href="{% url 'Manager:update' site.id %}"><button type="button">Edit</button></a></td>
 	<td><a href="{% url 'Manager:delete' site.id %}"><button type="button">Delete</button></a></td>
+	<td><a href="{{site.site_url}}"><button type="button">Site</button></a></td>
 	</tr>
-	</table>
 	{% endfor %}
+	</table>
 </body>
 </html>
