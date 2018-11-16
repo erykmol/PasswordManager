@@ -18,4 +18,8 @@ Also, Django will be required. To install it using pip, just type in `pip instal
 
 After that, download the entire application into some folder, then open the terminal and navigate to the directory where manage.py file resides. After that, run command `python3 manage.py runserver` which will create a localhost address that will be displayed in the terminal, it's usually http://127.0.0.1:8000/. The last thing to do is to copy the url from terminal and paste it to the browser which should be showing the login page.
 
+Here are login and password for example user:
+login: erykmol
+password:abc123
+
 
